@@ -2,6 +2,7 @@ import { Box, Grid, Stack } from "@mui/material";
 import "./App.scss";
 import { CreditCard } from "@mui/icons-material";
 import CardForm from "./components/CardForm";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       height="auto"
       minHeight="500px"
       bgcolor="#ffffff"
-      p={{ xs: "2em 1em", sm: "4em 3em" }}
+      p={{ xs: "2em 1em", sm: "4em 1.5em", md: "4em 3em" }}
     >
-      <Grid item className="item-one" xs={12} sm={7}>
+      <Grid item className="item-one" xs={12} md={7}>
         <Stack
           direction="row"
           alignItems="center"
@@ -50,7 +51,11 @@ function App() {
 
         <CardForm />
       </Grid>
-      <Grid item className="item-one" xs={12} sm={5}></Grid>
+      <Grid item className="item-one" xs={12} md={5}>
+        <Stack direction="column" alignItems="center">
+          <Card />
+        </Stack>
+      </Grid>
     </Grid>
   );
 }
