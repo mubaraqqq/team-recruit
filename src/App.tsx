@@ -3,6 +3,7 @@ import "./App.scss";
 import { CreditCard } from "@mui/icons-material";
 import CardForm from "./components/CardForm";
 import Card from "./components/Card";
+import Receipt from "./components/Receipt";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       height="auto"
       minHeight="500px"
       bgcolor="#ffffff"
+      rowGap={{ xs: "70px", md: "0" }}
       p={{ xs: "2em 1em", sm: "4em 1.5em", md: "4em 3em" }}
     >
       <Grid item className="item-one" xs={12} md={7}>
@@ -54,6 +56,7 @@ function App() {
       <Grid item className="item-one" xs={12} md={5}>
         <Stack direction="column" alignItems="center">
           <Card />
+          <Receipt />
         </Stack>
       </Grid>
     </Grid>
