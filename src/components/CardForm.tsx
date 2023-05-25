@@ -23,7 +23,7 @@ const CardForm = () => {
         <div className="input-container">
           <img src={masterCard} alt="mastercard" />
           <input
-            type="text"
+            type="number"
             placeholder="2412   -   7512    -   3412   -   3456"
           />
           <CheckCircle sx={{ color: "#025efe" }} />
@@ -41,7 +41,7 @@ const CardForm = () => {
         </Box>
         <Box width={{ xs: "100%", sm: "50%" }}>
           <div className="input-container input-centre">
-            <input type="text" defaultValue="327" />
+            <input type="number" defaultValue="327" />
             <ViewCompact />
           </div>
         </Box>
@@ -63,11 +63,11 @@ const CardForm = () => {
           width={{ xs: "100%", sm: "50%" }}
         >
           <div className="input-container">
-            <input type="text" defaultValue="09" />
+            <input type="number" defaultValue="09" />
           </div>
           /
           <div className="input-container">
-            <input type="text" defaultValue="22" />
+            <input type="number" defaultValue="22" />
           </div>
         </Stack>
       </Stack>
