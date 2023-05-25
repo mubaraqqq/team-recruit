@@ -1,4 +1,4 @@
-import { Box, Grid, Stack } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 import "./App.scss";
 import { CreditCard } from "@mui/icons-material";
 import CardForm from "./components/CardForm";
