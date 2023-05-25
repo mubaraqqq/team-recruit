@@ -23,6 +23,7 @@ const Receipt = () => {
         <p className="detail">VAT(20%)</p>
         <p className="value">$100.00</p>
       </Stack>
+      <hr />
     </Stack>
   );
 };

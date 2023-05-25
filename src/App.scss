@@ -73,7 +73,8 @@
       &::placeholder {
         color: rgb(186, 186, 186);
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 700;
+        opacity: 0.5;
       }
     }
   }
@@ -114,9 +115,12 @@
   background-color: #eaeef2;
   width: 70%;
   height: 600px;
+  //   border-top-left-radius: 20px;
+  //   border-top-right-radius: 20px;
   border-radius: 20px;
   padding: 2em;
   margin-top: -50%;
+  //   border-bottom: 5px dashed #c3c3c4;
 
   p.detail {
     font-weight: 700;
@@ -126,5 +130,13 @@
   p.value {
     font-weight: 700;
     color: #192441;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px dashed #000000; /* Adjust color as needed */
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
   }
 }
