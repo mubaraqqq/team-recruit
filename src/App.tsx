@@ -53,7 +53,8 @@ function App() {
 
         <CardForm />
       </Grid>
-      <Grid item className="item-one" xs={12} md={5}>
+      <Grid item className="item-two" xs={12} md={5}>
+        <div className="blue-bg"></div>
         <Stack direction="column" alignItems="center">
           <Card />
           <Receipt />
