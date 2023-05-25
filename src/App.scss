@@ -1,0 +1,89 @@
+.item-one {
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+
+    span {
+      font-weight: bolder;
+    }
+  }
+
+  span.clock {
+    background: #192441;
+    padding: 0.5em;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+}
+
+.card-form-container {
+  h3 {
+    margin: 10px 0;
+    & + p {
+      color: gray;
+      font-size: 14px;
+    }
+  }
+
+  svg {
+    & + p {
+      color: #025efe;
+      font-weight: 600;
+    }
+  }
+
+  .input-container {
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    padding: 1em 5% 1em 20%;
+    position: relative;
+
+    &.input-centre {
+      //   padding: 1em 0 1em 20%;
+      input {
+        text-align: center;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 4%;
+      top: 6%;
+      //   width: 8%;
+      //   height: auto;
+      //   transform: translateY(50%);
+    }
+
+    svg {
+      position: absolute;
+      right: 3%;
+    }
+
+    input {
+      padding: 0;
+      border: none;
+      outline: none;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 18px;
+      font-weight: 600;
+      color: #192441;
+
+      &::placeholder {
+        color: rgb(186, 186, 186);
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    color: #ffffff;
+    background-color: #025efe;
+    border: none;
+    outline: none;
+    padding: 1.5em 0;
+  }
+}
