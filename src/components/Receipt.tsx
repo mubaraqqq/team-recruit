@@ -1,5 +1,6 @@
 import { Stack } from "@mui/material";
 import apple from "../assets/icons8-apple (1).svg";
+import { ReceiptLong } from "@mui/icons-material";
 
 const Receipt = () => {
   return (
@@ -24,6 +25,17 @@ const Receipt = () => {
         <p className="value">$100.00</p>
       </Stack>
       <hr />
+      <Stack direction="row" alignItems="center" justifyContent="space-between">
+        <Stack direction="column" className="receipt-stub" gap="5px">
+          <p>You have to pay</p>
+          <p>
+            <span>549</span>
+            <span>.99</span>
+            <span>USD</span>
+          </p>
+        </Stack>
+        <ReceiptLong sx={{ fontSize: "50px", opacity: "0.5" }} />
+      </Stack>
     </Stack>
   );
 };
